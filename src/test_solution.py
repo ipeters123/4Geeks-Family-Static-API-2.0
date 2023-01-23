@@ -1,6 +1,7 @@
 import pytest, os, sys, tempfile, mock, json
 from flask import Flask
 
+# testing your file using flask configuring your database
 @pytest.fixture
 def client():
     with mock.patch('flask.Flask', lambda x: Flask(x)):
